@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../static/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="..\static\TRTTechnology.png" alt="" width="30" height="30" class="d-inline-block align-top">
+            Admin
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/dashboard" id="Home"><i class='bx bx-home-alt-2'></i> Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="getUsers"><i class='bx bx-user'></i> All Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup"><i class='bx bx-user-plus'></i> Create User</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="assignTickets"><i class='bx bx-plus-circle'></i> Assign Tickets</a></li>
+                <li class="nav-item"><a class="nav-link" href="logout" class="logout"><i class='bx bx-log-out'></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <section class="Employee-Display">
+            <table class="table table-hover animate__animated animate__fadeIn employee-table">
+                <thead>
+                    <tr>
+                        <th>Name </th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="employee-list">
+                </tbody>
+            </table>
+        </section>
+        <section class="ticket-display">
+            <table class="table table-hover animate__animated animate__fadeIn ticket-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Business Name</th>
+                        <th>Cell Number</th>
+                        <th>Assign</th>
+                        <th>Assigned Users</th>
+                    </tr>
+                </thead>                  
+                <tbody class="ticket-list">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../static/admin.js"></script>
+</body>
+</html>
